@@ -1,0 +1,62 @@
+.navbar{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.navbar li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.navbar .Navbar__Add{
+    background-color: orange;
+    color: black;
+    padding: 9px 25px !important;
+    border-radius: 10px;
+    transition: .2s;
+    border: none;
+}
+
+.Navbar__Add:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.navbar .hover__border:hover,.navbar .active{
+    border-bottom: 2px solid orange;
+    transition: .2s;
+}
+
+.navbar .hover__border a:hover,.navbar .active a{
+    font-weight: bold;
+    transition: .2s;
+}
+
+.navbar header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.navbar .nav__links{
+    list-style: none;
+}
+
+.navbar .nav__links li{
+    display: inline-block;
+    
+}
+
+.navbar .nav__links li a{
+    transition: all 0.3s ease 0s;
+    padding: 0 20px;
+}
