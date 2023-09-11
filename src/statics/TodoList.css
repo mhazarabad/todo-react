@@ -1,0 +1,101 @@
+.todoList p{
+    display: inline-block;
+}
+
+.todoList .list-holder h2{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+
+.todoList {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.todoList .card table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout:fixed;
+}
+
+.todoList table th, .todoList table td{
+    text-align: left;
+}
+
+.todoList td,.todoList th{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(90%);
+}
+
+.todoList .todo-name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(90%);
+}
+
+.todoList table thead tr{
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    /* background-color: rgb(240, 240, 240); */
+    color: rgb(26, 26, 26);
+    /* box-shadow: 0 5px 15px -3px gray; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    margin: 10px auto;
+}
+
+.todoList table thead tr:hover{
+    cursor:context-menu;
+}
+
+.todoList table tbody tr{
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    /* background-color: rgb(240, 240, 240); */
+    color: rgb(26, 26, 26);
+    box-shadow: 0 2px 10px -6px gray;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    margin: 10px auto;
+    transition: .2s;
+}
+
+.todoList table tbody tr:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0 5px 15px -3px #e0e0e0;
+}
+
+.todoList .list-holder .card{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+.todoList .edit, .todoList .delete{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.todoList .edit:hover, .todoList .delete:hover{
+    transform: scale(1.1);
+}
+
+.todoList .delete:hover path{
+    stroke: red;
+}
+
+.todoList .edit:hover path{
+    stroke: blue;
+}
