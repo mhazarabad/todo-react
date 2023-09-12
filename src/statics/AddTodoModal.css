@@ -1,0 +1,128 @@
+.add-todo-modal .popup {
+    position: absolute;
+    left: 50%;
+}
+
+.add-todo-modal .popup {
+    background: #f7e1c6;
+    padding: 25px;
+    border-radius: 15px;
+    top: -150%;
+    max-width: 780px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: top 0s 0.2s ease-in-out,
+        opacity 0.2s 0s ease-in-out,
+        transform 0.2s 0s ease-in-out;
+}
+
+.add-todo-modal .popup.show {
+    top: 50%;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0s 0s ease-in-out,
+        opacity 0.2s 0s ease-in-out,
+        transform 0.2s 0s ease-in-out;
+    z-index: 5;
+
+}
+
+.add-todo-modal .popup :is(header, .icons, .field) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-todo-modal .popup header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebedf9;
+}
+
+.add-todo-modal header span {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.add-todo-modal header .close,
+.add-todo-modal .icons a {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-todo-modal header .close {
+    color: black;
+    font-size: 17px;
+    background: #f2f3fb;
+    height: 33px;
+    width: 33px;
+    cursor: pointer;
+}
+
+.add-todo-modal header .close:hover {
+    background: #ebedf9;
+}
+
+.add-todo-modal .popup .content {
+    margin: 20px 0;
+}
+
+.add-todo-modal .popup .icons {
+    margin: 15px 0 20px 0;
+}
+
+
+.add-todo-modal .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-todo-modal .content-holder{
+    width: 100%;
+    margin: 10px;
+}
+
+.add-todo-modal input, .add-todo-modal select, .add-todo-modal textarea,.add-todo-modal option{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff6d;
+    width: 100%;
+    outline: none;
+    color: var(--main-color);
+    margin-bottom: 10px;
+
+}
+
+
+.add-todo-modal .add__btn, .add-todo-modal .cancel__btn{
+    Background-color: orange;
+    color: black;
+    padding: 9px 25px !important;
+    border-radius: 10px;
+    transition: .2s;
+    border: none;
+}
+
+.add-todo-modal .add__btn {
+    margin-right: 10px;
+}
+
+.add-todo-modal .cancel__btn {
+    Background-color: white;
+    margin-right: 10px;
+}
+
+.add-todo-modal .add__btn:hover,.add-todo-modal .cancel__btn:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+    
+}
+
