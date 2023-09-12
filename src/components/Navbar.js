@@ -1,18 +1,23 @@
 import '../statics/Navbar.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import AddTodoModal from './AddTodoModal';
 
-const handleAddTodo = () => {
-    console.log("todo add button")
-}
 
 const Navbar = () => {
+
+    const [showModal, setShowModal] = useState(false);
+
     return ( 
-        <nav className="navbar">
+        <div>
+            <nav className="navbar">
             <ul className="nav__links">
                 <li className='hover__border'><Link to="/">Home</Link></li>
-                <li><button onClick={() => handleAddTodo()} className='Navbar__Add'>Add Todo</button></li>
+                <li><button onClick={() => setShowModal(true)} className='Navbar__Add'>Add Todo</button></li>
             </ul>
-        </nav>        
+        </nav>
+        <AddTodoModal show={showModal} setModal={setShowModal}/>
+        </div>
      );
 }
  
