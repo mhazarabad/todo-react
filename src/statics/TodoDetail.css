@@ -1,0 +1,49 @@
+.todo-detail .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.todo-detail .content-holder{
+    width: 100%;
+    margin: 10px;
+}
+
+.todo-detail input, .todo-detail select, .todo-detail textarea,.todo-detail option{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff6d;
+    width: 100%;
+    outline: none;
+    color: var(--main-color);
+    margin-bottom: 10px;
+
+}
+
+
+.todo-detail .add__btn, .todo-detail .cancel__btn{
+    Background-color: orange;
+    color: black;
+    padding: 9px 25px !important;
+    border-radius: 10px;
+    transition: .2s;
+    border: none;
+}
+
+.todo-detail .add__btn {
+    margin-right: 10px;
+}
+
+.todo-detail .cancel__btn {
+    Background-color: white;
+    margin-right: 10px;
+}
+
+.todo-detail .add__btn:hover,.todo-detail .cancel__btn:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+    
+}
