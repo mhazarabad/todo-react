@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import TodoList from './components/TodoList';
+import TodoDetail from './components/TodoDetail';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
           <hr className='hr'/>
           <Routes >
             <Route exact path="/" element={<TodoList />} />
-            {/* <Route exact path="/todo/*" element={<Todo />} /> */}
+            <Route path="/todo/:todo_id/" element={<TodoDetail />} />
           </Routes>
         </div>
       </div>
