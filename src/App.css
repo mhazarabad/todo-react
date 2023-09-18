@@ -10,7 +10,6 @@
 
 body{
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(249,221,165,0.6335127801120448) 50%, rgba(255,255,255,1) 100%);
 }
 
 .hr {
