@@ -69,7 +69,7 @@
     transition: .2s;
 }
 
-.todoList table tbody tr:hover{
+.scale:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: .2s;
